@@ -227,6 +227,14 @@ body {
   font-size: 20px;
   line-height: 23px;
   color: #FFFFFF;
+
+  transition: background-color 0.2s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.2s cubic-bezier(0.075, 0.82, 0.165, 1), border-color 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.new-search__card-btn:hover {
+  background-color: #fff;
+  border-color: #328A27;
+  color: #328A27;
 }
 
 .new-search__card-count {
@@ -281,4 +289,11 @@ body {
   font-weight: 400;
   line-height: normal;
   color: var(--Green, #328A27);
+
+  transition: background-color 0.2s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.new-search__all:hover {
+  background-color: #328A27;
+  color: #FFF;
 }
