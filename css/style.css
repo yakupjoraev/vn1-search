@@ -11,6 +11,27 @@
   border: 0px;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   -webkit-box-sizing: border-box;
@@ -269,7 +290,14 @@ body {
   border: 1px solid #D9D9D9;
 }
 
-.new-search__card-count span {
+.new-search__card-count input {
+  width: 28px;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  pointer-events: none;
   color: var(--Dark-grey, #707070);
   text-align: center;
   font-size: 20px;

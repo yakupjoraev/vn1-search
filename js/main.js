@@ -14,9 +14,9 @@ function searchCards() {
     const counter = card.querySelector('[data-search-count]');
     const counterMinus = card.querySelector('[data-search-count-minus]');
     const counterPlus = card.querySelector('[data-search-count-plus]');
-    const countValue = card.querySelector('[data-search-count-value]');
+    const countInput = card.querySelector('input');
 
-    let currentValue = parseInt(countValue.textContent, 10)
+    let currentValue = parseInt(countInput.value, 10)
 
 
     btn.addEventListener('click', () => {
@@ -25,13 +25,13 @@ function searchCards() {
 
     counterPlus.addEventListener('click', () => {
       currentValue += 1;
-      countValue.textContent = currentValue;
+      countInput.value = currentValue;
     });
 
     counterMinus.addEventListener('click', () => {
       if (currentValue > minValue) {
         currentValue -= 1;
-        countValue.textContent = currentValue;
+        countInput.value = currentValue;
       } else {
         counter.style.zIndex = '-1';
       }
