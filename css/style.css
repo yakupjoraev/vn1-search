@@ -189,6 +189,7 @@ body {
 .new-search__card-prices {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   column-gap: 10px;
 }
 
