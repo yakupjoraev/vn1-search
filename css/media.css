@@ -10,6 +10,10 @@
   }
 
   .new-search__card {
+    grid-template-columns: 1fr;
+  }
+
+  .new-search__card-link {
     grid-template-columns: 40px 1fr;
   }
 
